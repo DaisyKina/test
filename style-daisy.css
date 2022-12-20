@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Poppins:ital,wght@0,400;1,200;1,300;1,500;1,600&display=swap'); 
+body{
+    line-height: 1.5;
+    font-family:"Poppins", sans-serif;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.containers{
+    max-width: 1170px;
+    margin: auto; 
+}
+.rows{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.footers{
+    background-color: gray;
+    padding: 70px 0px; 
+}
+.footer-col{
+    width: 25%;
+    padding: 0px 15px; 
+}
+.footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content:'';
+    position: absolute;
+    left: 0px;
+    bottom: -10px;
+    background-color: red;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 25px;
+}
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb; 
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col .social-link a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #ff9999;
+    margin: 0px 10px 0px 10px ;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    margin: .4em;
+    color: white;
+    transition: 0.3s ease;
+}    
+.footer-col .social-link a:hover{
+    color:#ffcc99;
+    background-color: white;
+}
+
+/*responsive*/
+
+@media(max-width: 768px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    .footer-col ul li a {
+        font-size: 14px;
+    }
+}
+@media(max-width: 325px){
+    .footer-col{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .footer-col ul li a {
+        font-size: 12px;
+    }
+}
